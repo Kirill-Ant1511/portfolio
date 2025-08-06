@@ -1,1 +1,32 @@
 @import 'tailwindcss';
+
+* {
+	box-sizing: border-box;
+}
+:root {
+	background: #111111;
+	min-height: 99vh;
+	min-width: 99vw;
+	overflow-x: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+@keyframes open-modal {
+	from {
+		opacity: 0;
+		transform: translateX(-10%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@layer utilities {
+	.animate-open-skill-modal {
+		animation: open-modal 0.7s ease-in-out;
+	}
+}

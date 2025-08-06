@@ -4,3 +4,8 @@ export interface ISkill {
 	description: string
 	mainSkill: string[]
 }
+
+export interface ISkillLibrary {
+	icon: string
+	title: string
+}
