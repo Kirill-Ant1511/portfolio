@@ -20,7 +20,7 @@ export function SkillCard({ skill }: Props) {
 				/>
 			)}
 			<button
-				className='p-4 flex items-center justify-center gap-2 rounded-lg bg-black cursor-pointer'
+				className='p-4 flex items-center justify-center gap-2 rounded-lg bg-black cursor-pointer h-20 w-64'
 				onClick={() => {
 					setIsOpen(true)
 					console.log('click')
@@ -29,8 +29,8 @@ export function SkillCard({ skill }: Props) {
 				<Image
 					src={skill.icon}
 					alt={skill.title}
-					width={50}
-					height={50}
+					width={40}
+					height={40}
 					priority
 				/>
 				<div>{skill.title}</div>

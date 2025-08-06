@@ -4,15 +4,45 @@ export const skills: ISkill[] = [
 	{
 		icon: '/ReactNext.png',
 		title: 'React/NextJS',
-		description: 'React is a JavaScript library for building user interfaces.',
-		mainSkill: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS']
+		description: 'Фреймворк для разработки веб сайтов на JS',
+		mainSkill: [
+			'Хорошие понимание в архитектуре проекта',
+			'Работа с паралельным роутингом',
+			'Работа с порталами(в основном для модальных окон)'
+		]
 	},
 	{
 		icon: '/tailwind.svg',
 		title: 'Tailwind CSS',
 		description:
 			'Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.',
-		mainSkill: ['Tailwind CSS', 'HTML', 'CSS']
+		mainSkill: [
+			'Работа с группами',
+			'Ну всё что можно сказать что это Tailwindcss'
+		]
+	},
+	{
+		icon: '/redux.svg',
+		title: 'Redux Toolkit',
+		description: 'State Manager',
+		mainSkill: [
+			'Создания store',
+			'Работа со слайсами',
+			'Для работы с состояниями использую простые кастомные хуки',
+			'Помимо Redux Toolkit, знаю Zustand'
+		]
+	},
+	{
+		icon: '/typescript.svg',
+		title: 'TypeScript',
+		description: 'Programming language',
+		mainSkill: ['Замечательное понимания типизации', 'Работа с дженериками']
+	},
+	{
+		icon: '/animateui.svg',
+		title: 'UI Library',
+		description: 'Which ui library I use',
+		mainSkill: ['LucideIcon', 'AnimateUI', 'ShadCN']
 	}
 ]
 
