@@ -1,8 +1,8 @@
 import { Pages } from '@/configs/pages.config'
 import { projects } from '@/data/project.data'
 import { ArrowLeft, Github } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
+import { OpeningImage } from './OpeningImage'
 
 interface Props {
 	params: Promise<{ id: string }>
@@ -29,12 +29,11 @@ export default async function ProjectForIdPage({ params }: Props) {
 				<div className=' grid grid-cols-2 gap-5'>
 					<div className='grid grid-cols-2 gap-2 justify-start items-start'>
 						{project.image.map(src => (
-							<Image
+							<OpeningImage
 								src={src}
 								key={src}
 								width={400}
 								height={400}
-								className='rounded-lg'
 								alt='source'
 							/>
 						))}
