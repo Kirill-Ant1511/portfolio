@@ -1,9 +1,7 @@
 import { projects } from '@/data/project.data'
 import { ProjectCard } from './Cards/ProjectCard'
 
-interface Props {}
-
-export function Projects({}: Props) {
+export function Projects() {
 	return (
 		<div
 			id='Projects'

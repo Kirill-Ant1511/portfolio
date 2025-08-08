@@ -1,8 +1,6 @@
 import { createPortal } from 'react-dom'
 
-interface Props {}
-
-export function ProjectModal({}: Props) {
+export function ProjectModal() {
 	return createPortal(
 		<div>
 			<h1>ProjectModal</h1>

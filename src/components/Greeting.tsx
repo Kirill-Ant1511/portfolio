@@ -19,7 +19,7 @@ export function Greeting() {
 			<div className='w-2/3'>
 				<div className='space-y-0.5'>
 					<h1 className='text-5xl font-bold text-shadow-lg text-shadow-pink-500 text-blue-500/90'>
-						Hello, I'm Kirill
+						Hello, I am Kirill
 					</h1>
 					<a
 						href='https://www.sut.ru/'
