@@ -1,5 +1,5 @@
 import { skills } from '@/data/skills.data'
-import { SkillCard } from './Cards/SkillCard'
+import SkillCard from './Cards/SkillCard'
 
 export function MySkills() {
 	return (

@@ -1,14 +1,14 @@
 'use client'
 import { ISkill } from '@/types/skill.types'
 import Image from 'next/image'
-import { useState } from 'react'
+import { memo, useState } from 'react'
 import { SkillModal } from '../modals/SkillModal'
 
 interface Props {
 	skill: ISkill
 }
 
-export function SkillCard({ skill }: Props) {
+function SkillCard({ skill }: Props) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
@@ -40,3 +40,5 @@ export function SkillCard({ skill }: Props) {
 		</div>
 	)
 }
+
+export default memo(SkillCard)
