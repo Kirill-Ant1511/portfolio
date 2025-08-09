@@ -10,7 +10,7 @@ interface Props {
 
 export function SkillModal({ skill, onClose }: Props) {
 	return createPortal(
-		<div className='fixed top-3 left-3 bg-black p-4 rounded-lg w-1/4 text-white animate-open-skill-modal'>
+		<div className='fixed top-3 left-3 bg-black p-4 rounded-lg w-fit max-md:top-0 max-lg:left-0 max-md:w-full text-white animate-open-skill-modal'>
 			<div className='flex justify-between items-center'>
 				<h1 className='flex items-center gap-2 text-xl font-semibold'>
 					<Image

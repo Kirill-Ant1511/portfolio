@@ -17,16 +17,16 @@ export default async function ProjectForIdPage({ params }: Props) {
 				<div className='flex justify-between items-center w-full  mb-5 '>
 					<Link
 						href={Pages.HOME}
-						className='flex items-center gap-2'
+						className='flex items-center gap-2 text-base max-md:text-xs'
 					>
 						{' '}
 						<ArrowLeft size={20} /> Go to home page
 					</Link>
-					<h1 className='text-blue-500 text-shadow-md text-shadow-pink-500 text-3xl self-end'>
+					<h1 className='text-blue-500 text-shadow-md text-shadow-pink-500 text-3xl self-end max-md:text-xl'>
 						{project.title}
 					</h1>
 				</div>
-				<div className=' grid grid-cols-2 gap-5'>
+				<div className=' grid grid-cols-2 gap-5  max-xl:grid-cols-1'>
 					<div className='grid grid-cols-2 gap-2 justify-start items-start'>
 						{project.image.map(src => (
 							<OpeningImage

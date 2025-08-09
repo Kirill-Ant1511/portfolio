@@ -15,7 +15,7 @@ export function ProjectCard({ project }: Props) {
 				alt={project.title}
 				width={400}
 				height={100}
-				className='rounded-2xl border-blue-400 border-2 shadow-md shadow-pink-400'
+				className='rounded-2xl border-blue-400 border-2 shadow-md shadow-pink-400 max-lg:size-50 max-md:hidden'
 				priority
 			/>
 			<div className='flex flex-col gap-2'>
