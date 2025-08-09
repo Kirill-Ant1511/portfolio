@@ -19,22 +19,24 @@ export function Greeting() {
 			<div className='w-2/3 max-lg:w-[90%]'>
 				<div className='space-y-0.5'>
 					<h1 className='text-5xl max-md:text-xl font-bold text-shadow-lg text-shadow-pink-500 text-blue-500/90'>
-						Hello, I am Kirill
+						Привет, я Кирилл
 					</h1>
-					<a
-						href='https://www.sut.ru/'
-						target='_blank'
-						className='text-sm msx-sm:text-xs text-white/50'
-					>
-						Saint Petersburg State University of Telecommunications named after
-						prof. M.A. Bonch-Bruevich
-					</a>
+					<span className='text-sm msx-sm:text-xs text-white/50'>
+						Я учусь в
+						<a
+							href='https://www.sut.ru/'
+							target='_blank'
+						>
+							Санкт-Петербургский государственный университет телекоммуникаций
+							им. проф. М. А. Бонч-Бруевича
+						</a>
+					</span>
 				</div>
 				<p className='text-2xl text-gray-300 max-sm:text-sm'>
-					I develop websites on React/NextJS.
+					Я занимаюсь разработкой веб-сайтов на React/NextJS
 				</p>
 				<div className='mt-10 max-lg:hidden'>
-					<h5 className='text-sm text-white/50 mb-1'>My Skills:</h5>
+					<h5 className='text-sm text-white/50 mb-1'>Мои умения:</h5>
 					<div className='flex gap-2 flex-wrap'>
 						{mySkills.map(skill => (
 							<SkillMiniCard

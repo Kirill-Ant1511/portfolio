@@ -7,7 +7,7 @@ export function Projects() {
 			id='Projects'
 			className='flex flex-col items-center'
 		>
-			<h1 className='text-4xl font-bold mb-5'>My Projects</h1>
+			<h1 className='text-4xl font-bold mb-5'>Мои проекты</h1>
 			<div className='flex flex-col items-center gap-5'>
 				{projects.map(project => (
 					<ProjectCard

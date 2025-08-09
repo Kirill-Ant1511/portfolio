@@ -41,7 +41,7 @@ export default async function ProjectForIdPage({ params }: Props) {
 					<div className='flex flex-col gap-2'>
 						<p className='text-xl'>{project.description}</p>
 						<div className=''>
-							Using technology:
+							Используемые технологии:
 							<div className='grid grid-rows-5 grid-cols-2'>
 								{project.usesTechnology.map((tech, index) => (
 									<div key={tech}>
@@ -54,7 +54,7 @@ export default async function ProjectForIdPage({ params }: Props) {
 							href={project.githubUrl}
 							className='flex items-center p-2 bg-blue-500 rounded-lg self-start'
 						>
-							<Github /> GitHub Link
+							<Github /> GitHub
 						</Link>
 					</div>
 				</div>

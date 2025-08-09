@@ -31,7 +31,7 @@ export function SkillModal({ skill, onClose }: Props) {
 			</div>
 			<p className='text-sm text-white/50'>{skill.description}</p>
 			<div>
-				<h2 className='text-lg font-semibold'>Main Skills</h2>
+				<h2 className='text-lg font-semibold'>Основные умения:</h2>
 				<div className='flex flex-col gap-2'>
 					{skill.mainSkill.map((skill, index) => (
 						<div

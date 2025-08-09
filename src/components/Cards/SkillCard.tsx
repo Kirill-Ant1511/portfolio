@@ -22,8 +22,7 @@ function SkillCard({ skill }: Props) {
 			<button
 				className='p-4 flex items-center justify-center gap-2 rounded-lg bg-black cursor-pointer h-20 w-64'
 				onClick={() => {
-					setIsOpen(true)
-					console.log('click')
+					setIsOpen(!isOpen)
 				}}
 			>
 				<Image
