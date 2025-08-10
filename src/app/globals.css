@@ -1,17 +1,37 @@
 @import 'tailwindcss';
-
+@custom-variant dark (&:where(.dark, .dark *));
 * {
 	box-sizing: border-box;
 }
 :root {
-	background: #111111;
 	min-height: 99vh;
 	min-width: 99vw;
 	overflow-x: hidden;
+	--background: #111111;
+	--foreground: #dddddd;
+	--primary: rgb(24, 155, 248);
+	--secondary: #fc8585;
+	--card: #272751;
+}
+
+.dark {
+	--background: #ffffff;
+	--foreground: #111111;
+	--primary: rgb(24, 155, 248);
+	--secondary: #fc8585;
+	--card: #6262f8;
 }
 
 .no-scroll {
 	overflow-y: hidden;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-secondary: var(--secondary);
+	--color-primary: var(--primary);
+	--color-card: var(--card);
 }
 
 @keyframes open-modal {

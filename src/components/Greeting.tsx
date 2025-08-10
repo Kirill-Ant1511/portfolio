@@ -18,11 +18,11 @@ export function Greeting() {
 			/>
 			<div className='w-2/3 max-lg:w-[90%]'>
 				<div className='space-y-0.5'>
-					<h1 className='text-5xl max-md:text-xl font-bold text-shadow-lg text-shadow-pink-500 text-blue-500/90'>
+					<h1 className='text-5xl max-md:text-xl font-bold text-shadow-lg text-shadow-secondary text-primary/90'>
 						Привет, я Кирилл
 					</h1>
-					<span className='text-sm msx-sm:text-xs text-white/50'>
-						Я учусь в
+					<span className='text-sm msx-sm:text-xs text-foreground/50'>
+						Я учусь в{' '}
 						<a
 							href='https://www.sut.ru/'
 							target='_blank'
@@ -32,11 +32,11 @@ export function Greeting() {
 						</a>
 					</span>
 				</div>
-				<p className='text-2xl text-gray-300 max-sm:text-sm'>
+				<p className='text-2xl text-foreground max-sm:text-sm'>
 					Я занимаюсь разработкой веб-сайтов на React/NextJS
 				</p>
 				<div className='mt-10 max-lg:hidden'>
-					<h5 className='text-sm text-white/50 mb-1'>Мои умения:</h5>
+					<h5 className='text-sm text-foreground/50 mb-1'>Мои умения:</h5>
 					<div className='flex gap-2 flex-wrap'>
 						{mySkills.map(skill => (
 							<SkillMiniCard

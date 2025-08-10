@@ -20,7 +20,7 @@ function SkillCard({ skill }: Props) {
 				/>
 			)}
 			<button
-				className='p-4 flex items-center justify-center gap-2 rounded-lg bg-black cursor-pointer h-20 w-64'
+				className='p-4 flex items-center justify-center gap-2 rounded-lg bg-card cursor-pointer h-20 w-64 text-white'
 				onClick={() => {
 					setIsOpen(!isOpen)
 				}}

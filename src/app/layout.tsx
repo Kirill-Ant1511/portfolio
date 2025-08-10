@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/providers/ThemeProvider'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -9,7 +10,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-	title: 'Portfolio',
+	title: 'Kirill Antonenko',
 	description: 'Kirill Antonenko Portfolio',
 	icons: {
 		icon: '/ReactNext.png'
@@ -26,7 +27,9 @@ export default function RootLayout({
 			lang='en'
 			className='scroll-smooth'
 		>
-			<body className={`${poppins.variable} antialiased`}>{children}</body>
+			<ThemeProvider>
+				<body className={`${poppins.variable} antialiased`}>{children}</body>
+			</ThemeProvider>
 		</html>
 	)
 }

@@ -13,7 +13,7 @@ export default async function ProjectForIdPage({ params }: Props) {
 	const project = projects.find(project => project.id === id)
 	if (project) {
 		return (
-			<div className='flex flex-col items-center text-white p-4'>
+			<div className='flex flex-col items-center text-foreground p-4'>
 				<div className='flex justify-between items-center w-full  mb-5 '>
 					<Link
 						href={Pages.HOME}
@@ -22,7 +22,7 @@ export default async function ProjectForIdPage({ params }: Props) {
 						{' '}
 						<ArrowLeft size={20} /> Go to home page
 					</Link>
-					<h1 className='text-blue-500 text-shadow-md text-shadow-pink-500 text-3xl self-end max-md:text-xl'>
+					<h1 className='text-primary text-shadow-md text-shadow-secondary text-3xl self-end max-md:text-xl'>
 						{project.title}
 					</h1>
 				</div>
@@ -40,19 +40,20 @@ export default async function ProjectForIdPage({ params }: Props) {
 					</div>
 					<div className='flex flex-col gap-2'>
 						<p className='text-xl'>{project.description}</p>
-						<div className=''>
+						<div>
 							Используемые технологии:
 							<div className='grid grid-rows-5 grid-cols-2'>
 								{project.usesTechnology.map((tech, index) => (
 									<div key={tech}>
-										<span className='text-white/50'>{index + 1}.</span> {tech}
+										<span className='text-foreground/50'>{index + 1}.</span>{' '}
+										{tech}
 									</div>
 								))}
 							</div>
 						</div>
 						<Link
 							href={project.githubUrl}
-							className='flex items-center p-2 bg-blue-500 rounded-lg self-start'
+							className='flex items-center p-2 bg-primary rounded-lg self-start text-white'
 						>
 							<Github /> GitHub
 						</Link>

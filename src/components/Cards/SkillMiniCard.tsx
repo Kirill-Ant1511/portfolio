@@ -7,7 +7,7 @@ interface Props {
 
 export function SkillMiniCard({ skill }: Props) {
 	return (
-		<div className='flex items-center gap-2 py-1 px-2 bg-black w-fit rounded-lg'>
+		<div className='flex items-center gap-2 py-1 px-2 bg-card/70 w-fit rounded-lg text-white'>
 			<Image
 				src={skill.icon}
 				alt={skill.title}
