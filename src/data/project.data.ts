@@ -34,7 +34,12 @@ export const projects: IProject[] = [
 		image: [
 			'/projects/taskflow/1.png',
 			'/projects/taskflow/2.png',
-			'/projects/taskflow/3.png'
+			'/projects/taskflow/3.png',
+			'/projects/taskflow/4.png',
+			'/projects/taskflow/5.png',
+			'/projects/taskflow/6.png',
+			'/projects/taskflow/7.png',
+			'/projects/taskflow/8.png'
 		],
 		usesTechnology: [
 			'NextJS',
@@ -45,5 +50,47 @@ export const projects: IProject[] = [
 			'clsx'
 		],
 		githubUrl: 'https://github.com/Kirill-Ant1511/task-flow'
+	},
+	{
+		id: '3',
+		title: 'DiveSea 🖼️',
+		description:
+			'Простой проект, в котором я изучал вёрстку на чистом HTML/CSS/JS. Данный проект помог мне закрепить имеющиеся знания в вёрстке и изучить много нового',
+		image: [
+			'/projects/divesea/1.png',
+			'/projects/divesea/2.png',
+			'/projects/divesea/3.png',
+			'/projects/divesea/4.png',
+			'/projects/divesea/5.png',
+			'/projects/divesea/6.png',
+			'/projects/divesea/7.png',
+			'/projects/divesea/8.png',
+			'/projects/divesea/9.png'
+		],
+		usesTechnology: ['HTML', 'CSS', 'JS', 'Git', 'GitHub'],
+		githubUrl: 'https://github.com/Kirill-Ant1511/DiveSea'
+	},
+	{
+		id: '4',
+		title: 'Simple Auth 🔐',
+		description:
+			'Простой проект для изучения аутентификации и работы с API. Данный проект помог мне изучить минимальную работу с API и аутентификацию, а также закрепить знания в работе с React и способоми защиты страниц от неавторизованных пользователей',
+		image: [
+			'/projects/simpleauth/1.png',
+			'/projects/simpleauth/2.png',
+			'/projects/simpleauth/3.png',
+			'/projects/simpleauth/4.png',
+			'/projects/simpleauth/5.png'
+		],
+		usesTechnology: [
+			'React',
+			'TypeScript',
+			'axios',
+			'Lucide Icon',
+			'clsx',
+			'react-router-dom',
+			'supabase-js'
+		],
+		githubUrl: 'https://github.com/Kirill-Ant1511/simple-auth'
 	}
 ]

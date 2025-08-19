@@ -13,7 +13,7 @@ export default async function ProjectForIdPage({ params }: Props) {
 	const project = projects.find(project => project.id === id)
 	if (project) {
 		return (
-			<div className='flex flex-col items-center text-foreground p-4'>
+			<div className='flex flex-col items-center text-foreground p-4 bg-background min-h-screen min-w-screen'>
 				<div className='flex justify-between items-center w-full  mb-5 '>
 					<Link
 						href={Pages.HOME}
